@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmação de Agendamento</title>
+  </head>
+  <body>
+    <h1>Agendamento Confirmado</h1>
+    <p>
+      O agendamento para {{ agendamento.cliente }} foi confirmado com sucesso.
+    </p>
+    <p>Outras informações do agendamento:</p>
+    <ul>
+      <li>Descrição: {{ agendamento.descricao }}</li>
+      <li>Data: {{ agendamento.data }}</li>
+      <li>Hora: {{ agendamento.hora }}</li>
+    </ul>
+  </body>
+</html>

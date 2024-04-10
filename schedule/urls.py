@@ -24,5 +24,7 @@ urlpatterns = [
     path('bahia/', views.bahia, name='bahia'),
     path('create/', views.criar_agendamento, name='criar_agendamento'),
     path('list/', views.listar_agendamentos, name='listar_agendamentos'),
-    path('confirmar', views.confirmar_agendamento, name='confirmar_agendamento')
+    path('confirmar/<int:agendamento_id>/', views.confirmar_agendamento, name='confirmar_agendamento'),
+    path('confirmacao/<int:agendamento_id>/', views.pagina_confirmacao, name='pagina_confirmacao'),
+
 ]

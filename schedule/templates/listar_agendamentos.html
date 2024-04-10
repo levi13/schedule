@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'schedule/styles.css' %}">
+</head>
+<ul id="listar_agendamentos">
+    {% for agendamento in agendamentos %}
+    <li id="agendamento_item">
+        <div class="card_item">
+            <h3 id="listar_titulo"> {{agendamento.titulo}} do {{agendamento.cliente}}</h3>
+             <hr>
+            Descrição: {{agendamento.descricao}}
+            <p id="lista_cliente">Cliente: {{agendamento.cliente}}</p>
+            <p id="lista_profissional">Profissional: {{agendamento.profissional}}</p>
+            <p id="listar_horario">Data: {{agendamento.data}}</p>
+            <p id="listar_horario">Horario: {{agendamento.hora}}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<button class="butao" onclick="window.location.href='{% url 'criar_agendamento' %}'">
+    Criar agendamento
+</button>
+
+</html>

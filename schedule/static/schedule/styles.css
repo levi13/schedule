@@ -1,0 +1,107 @@
+body{
+    background: linear-gradient(90deg, rgba(157,76,212,1) 0%, rgba(182,49,49,1) 50%);
+}
+
+
+#agendamento_item {
+    background-color: gray;
+    color: white;
+    width: 512px;
+    padding: 4px;
+    margin: 12px;
+    border-radius: 12px;
+    
+
+}
+
+.card_item{
+    padding-left: 12px;
+}
+
+
+
+#listar_titulo {
+    text-align: center;
+
+}
+
+#listar_horario {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+form {
+    display: flex ;
+    flex-direction: column;
+    padding: 12px;
+    border: solid, 3px, black;
+    
+
+}
+
+
+p input{
+    width: 256px;
+    border: none;
+    height: 24px;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+
+#id_titulo:disabled {
+    
+}
+
+#id_profissional {
+    border-radius: 6px;
+}
+
+#id_data_hora {
+    border-radius: 4px;
+}
+
+#id_descricao {
+    border-radius: 6px;
+    height: 48px;
+}
+
+#id_cliente {
+    border-radius: 6px;
+}
+
+#id_titulo {
+    border-radius: 6px;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.butao {
+    width: auto;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    
+}
+
+.butao:last-child {
+    margin-top: 36px;
+}
+
+.butao:hover{
+    background-color: #5c5c5c;
+    color: white    ;
+    transition:250ms;
+}
+
+ul  {
+    list-style-type: none ;
+}

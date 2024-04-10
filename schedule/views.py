@@ -13,7 +13,7 @@ def criar_agendamento(request):
         form = ScheduleForm(request.POST)
         if form.is_valid():
             agendamento = form.save()
-            return redirect('pagina_confirmacao', agendamento_id=agendamento.id)  # Remova esta linha
+            return redirect('confirmar_agendamento', agendamento_id=agendamento.id)  # Remova esta linha
     else:
         form = ScheduleForm()
     return render(request, 'criar_agendamento.html', {'form': form})

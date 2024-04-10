@@ -1,20 +1,22 @@
 <html>
-<head>
-{% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'schedule/styles.css' %}">
-</head>
-<body>
-<form method="post" action='{% url "" %}'>
-<h1>Confirmação de Agendamento para {{agendamento.cliente}} </h1>
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input name='agendamento.id' type='hidden'>
-    <button class="butao" type="submit">
-        Confirme Agendamento
-    </button>
-</form>
+  <head>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'schedule/styles.css' %}"
+    />
+  </head>
+  <body>
+    <h1>Confirmação de Agendamento para {{agendamento.cliente}}</h1>
+    <p>Descrição: {{agendamento.descricao}}</p>
 
-</body>
-
-
+    <form
+      method="post"
+      action="{% url 'confirmar_agendamento' agendamento.id %}"
+    >
+      {% csrf_token %}
+      <button class="butao" type="submit">Confirmar Agendamento</button>
+    </form>
+  </body>
 </html>

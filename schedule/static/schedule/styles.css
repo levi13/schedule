@@ -36,7 +36,7 @@ form {
     flex-direction: column;
     padding: 12px;
     border: solid, 3px, black;
-    
+    width: 44%;
 
 }
 
@@ -104,4 +104,8 @@ label {
 
 ul  {
     list-style-type: none ;
+}
+
+.texto_confirmacao {
+    color: white;
 }
